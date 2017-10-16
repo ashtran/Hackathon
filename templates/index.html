@@ -5,6 +5,7 @@
     <body>
         <h1>Reddit</h1>
         <div id="wrapper">
+<<<<<<< HEAD
                 <div name="headnav">
                     <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn">MY SUBSCRIPTIONS</button>
@@ -86,6 +87,27 @@
 
 
 <!--dash -->
+=======
+            <div name="headnav"></div>
+<!--headcategory  ---------------------------------------------------------------------->
+            <div name="headcategory">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Reddit_logo_and_wordmark.svg/1200px-Reddit_logo_and_wordmark.svg.png" width="100" height="35">
+                <div id="navbar"><a href="/">reddit.com</a>&nbsp;
+                    <ul class="tabmenu ">
+                    <li class="selected"><a href="/" class="choice">hot</a></li>
+                    <li><a href="/" class="choice">new</a></li>
+                    <li><a href="/" class="choice">rising</a></li>
+                    <li><a href="/" class="choice">controversial</a></li>
+                    <li><a href="/" class="choice">top</a></li>
+                    <li><a href="/" class="choice">gilded</a></li>
+                    <li><a href="/" class="choice">wiki</a></li>
+                    </ul>
+                </div>
+                <div><p>What to join? <a href="">Log in</a> or <a href="">sign up</a> in seconds. | English</p></div>
+            </div>
+
+<!--dash ---------------------------------------------------------------------->
+>>>>>>> refs/remotes/origin/master
             <div name="dash">
                 <!--topmenu  -->
                 <div><p>Popular in: <a href="">United States</a>&nbsp;Select state: <a href="">California</a></p></div>
@@ -137,15 +159,22 @@
                     <div><span>view more:</span><span><a href="/">next></a></span></div>
 
             </div>
+<<<<<<< HEAD
 <!--dash-->
             <div name="side">
                     <div name="search">
+=======
+<!--dash  ---------------------------------------------------------------------->
+            <div name="side">
+                                  <div name="search">
+>>>>>>> refs/remotes/origin/master
                        Search: <form action="/search" method="post">
                             <input type="text" name="search">
                             <input type="submit" name="Submit">
                         </form>
                     </div>
                     <div name="login">
+<<<<<<< HEAD
                       {% with messages = get_flashed_messages(category_filter=["login"]) %}
                         {% if messages %}
                           {% for message in messages %}
@@ -158,6 +187,13 @@
                         <p>Password:<input type="text" name="password" id="password"></p>
                         <p><input type="submit" value="Login"></p>
                       </form>
+=======
+                        <form action="/login" method="post">
+                            Username:<input type="text" name="username">
+                            Password:<input type="password" name="password">
+                            <button class='btn' type='submit'>Submit</button>
+                        </form>
+>>>>>>> refs/remotes/origin/master
                     </div>
                     <div id="rememberme">
                         <!--  AD plans on adding functionality for this button -->
@@ -168,6 +204,7 @@
                     </div>
 
             </div>
+<<<<<<< HEAD
 
 <!-- registrationform -->
             <div>
@@ -186,6 +223,8 @@
               {% endif %}
             {% endwith %}
 
+=======
+>>>>>>> refs/remotes/origin/master
             <div name="extra"></div>
             <div name="footer"></div>
         </div>
