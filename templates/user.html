@@ -80,7 +80,7 @@
                         <li><a href="/" class="choice">wiki</a></li>
                         </ul>
                     </div>
-                    <div><p>What to join? <a href="">Log in</a> or <a href="">sign up</a> in seconds. | English</p></div>
+                    <div><p><a href="http://localhost:5000/logout">Log out</a></p></div>
                 </div>
 
 
@@ -145,46 +145,8 @@
                             <input type="submit" name="Submit">
                         </form>
                     </div>
-                    <div name="login">
-                      {% with messages = get_flashed_messages(category_filter=["login"]) %}
-                        {% if messages %}
-                          {% for message in messages %}
-                            <p>{{message}}</p>
-                          {% endfor %}
-                        {% endif %}
-                      {% endwith %}
-                      <form action="/login" method="post">
-                        <p>Username:<input type="text" name="username" id="username"></p>
-                        <p>Password:<input type="text" name="password" id="password"></p>
-                        <p><input type="submit" value="Login"></p>
-                      </form>
-                    </div>
-                    <div id="rememberme">
-                        <!--  AD plans on adding functionality for this button -->
-                        <input type="checkbox" name="rememberme" id="rem">
-                        <label for='rem'>remember me</label>
-                        <a href="/reset"> reset password</a>
-                        <button class='btn' type="submit">login</button>
-                    </div>
 
             </div>
-
-<!-- registrationform -->
-            <div>
-              <form action="/create" method="post">
-                <p>Username:<input type="text" name="username" id="username"></p>
-                <p>Password:<input type="text" name="password" id="password"></p>
-                <p>Password Confirmation:<input type="text" name="confirm_password" id="confirm_password"></p>
-                <p><input type="submit" value="Create Account"></p>
-              </form>
-            </div>
-            {% with messages = get_flashed_messages(category_filter=["registration"]) %}
-              {% if messages %}
-                {% for message in messages %}
-                  <p>{{message}}</p>
-                {% endfor %}
-              {% endif %}
-            {% endwith %}
 
             <div name="extra"></div>
             <div name="footer"></div>
